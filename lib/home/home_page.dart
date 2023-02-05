@@ -187,7 +187,7 @@ class HomePageState extends State<HomePage> {
                         child: InAppWebView(
                       key: webViewKey,
                       initialUrlRequest: URLRequest(
-                          url: Uri.parse("https://www.dukaletu.co.ke/")),
+                          url: Uri.parse("http://www.listorbuy.org/")),
                       initialOptions: options,
                       pullToRefreshController: pullToRefreshController,
                       onWebViewCreated: (controller) {

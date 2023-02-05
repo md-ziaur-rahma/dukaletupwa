@@ -12,5 +12,5 @@ class Common {
         fontSize: 16.0);
   }
 
-  static const Color mainColor = Color(0xFF3db83a);
+  static const Color mainColor = Color(0xFFee1d23);
 }
