@@ -92,15 +92,6 @@ class HomePageState extends State<HomePage> {
     }
   }
 
-  JavascriptChannel _toasterJavascriptChannel(BuildContext context) {
-    return JavascriptChannel(
-        name: 'Toaster',
-        onMessageReceived: (JavascriptMessage message) {
-          // ignore: deprecated_member_use
-          // print('${message.message}');
-        });
-  }
-
   double progressValue = 0;
 
   Future<bool> _onWillPop(BuildContext context) async {
