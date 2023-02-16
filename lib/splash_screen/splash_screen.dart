@@ -4,6 +4,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../common.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
@@ -56,6 +58,7 @@ class SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: Common.mainColor,
       body: SplashView(),
     );
   }
@@ -93,10 +96,10 @@ class SplashViewState extends State<SplashView> {
         Expanded(
           flex: 1,
           child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               child: const Center(
                   child: Image(
-                image: AssetImage("images/ok2list_logo2.png"),
+                image: AssetImage("images/listorby_logo_full.png"),
                 height: 120,
               )
               )
